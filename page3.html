@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ความในใจถึงตังค์ตังค์ 💌</title>
+    <!-- นำเข้าฟอนต์ลายมือน่ารักๆ จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* สีพื้นหลังสีชมพูอ่อน */
+            background-color: #fdecf4; 
+            background-image: radial-gradient(#ffc4d9 1px, transparent 1px);
+            background-size: 20px 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Mali', cursive;
+            padding: 20px;
+            overflow: hidden; /* ป้องกันหน้าจอมันเลื่อนเวลาปุ่มใหญ่ขึ้นมากๆ */
+        }
+
+        /* กระดาษจดหมาย */
+        .letter-paper {
+            background-color: #ffffff;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.15); 
+            position: relative;
+            z-index: 10;
+        }
+
+        .letter-content {
+            background-image: linear-gradient(transparent 95%, #fce4ec 5%);
+            background-size: 100% 2em; 
+            line-height: 2em;
+            font-size: 18px;
+            color: #4a4a4a;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .dear-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #e91e63; 
+            margin-bottom: 20px;
+        }
+
+        .sign-text {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            color: #e91e63;
+            margin-top: 20px;
+        }
+
+        .question-section {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px dashed #ffc0cb;
+        }
+
+        .question-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #d81b60;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* จัดให้ปุ่มอยู่ตรงกลางเวลาขนาดเปลี่ยน */
+            gap: 15px;
+            flex-wrap: wrap;
+            min-height: 80px; /* จองพื้นที่ไว้ไม่ให้ปุ่มกระโดดไปมา */
+        }
+
+        /* ปุ่มตกลง */
+        .btn-yes {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Nunito', 'Mali', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 0px #c2185b;
+            /* 💡 เพิ่ม transition แบบนุ่มนวลเวลาปุ่มขยายขนาด */
+            transition: all 0.3s ease; 
+        }
+
+        .btn-yes:active {
+            transform: translateY(4px) !important;
+            box-shadow: 0 0px 0px #c2185b;
+        }
+
+        /* ปุ่มปฏิเสธ */
+        .btn-no {
+            background-color: #eeeeee;
+            color: #888888;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Nunito', 'Mali', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 0px #cccccc;
+            /* 💡 เพิ่ม transition แบบนุ่มนวลเวลาปุ่มหดขนาด */
+            transition: all 0.3s ease; 
+        }
+
+        .btn-no:active {
+            box-shadow: 0 0px 0px #cccccc;
+        }
+
+        .corner-heart {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            font-size: 40px;
+            transform: rotate(15deg);
+        }
+
+        @media (max-width: 500px) {
+            .letter-paper {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter-paper">
+        <div class="corner-heart">💌</div>
+
+        <div class="dear-text">ถึง ตังค์ตังค์ คนเก่ง 🩷</div>
+
+        <div class="letter-content">
+            ที่แอบซุ่มทำเว็บนี้ขึ้นมา ก็เพราะอยากจะบอกว่า...<br>
+            ตั้งแต่เราคุยกันมา เค้ามีความสุขมากๆ เลยนะ 
+            ขอบคุณที่คอยเป็นรอยยิ้ม คอยรับฟัง 
+            และคอยน่ารักใส่กันอยู่ตลอดเลย 🥰<br>
+            <br>
+            จริงๆ ก็พิมพ์ไม่ค่อยเก่งหรอก แต่ตั้งใจเขียนโค้ดนี้มาให้ตังค์ตังค์โดยเฉพาะเลยนะ หวังว่าจะชอบนะคั้บ!
+        </div>
+
+        <div class="sign-text">
+            จาก... อามิน 👦🏻
+        </div>
+
+        <div class="question-section">
+            <div class="question-text">
+                สรุปแล้ว... เป็นแฟนกันนะคั้บ? 🥺💖
+            </div>
+            
+            <div class="button-group">
+                <!-- 💡 ใส่ id ให้ปุ่ม เพื่อให้ JavaScript เรียกใช้งานได้ -->
+                <button id="btnYes" class="btn-yes" onclick="alert('เย้!!! ดีใจที่สุดในโลกเลยยยย 🎉 รักตังค์ตังค์นะคั้บ 💖'); window.location.href='page4.html';">
+                    ตกลง เป็นแฟนกัน 🩷
+                </button>
+                
+                <!-- 💡 เปลี่ยนคำสั่ง onclick ไปเรียกใช้ฟังก์ชัน JavaScript แทน -->
+                <button id="btnNo" class="btn-no" onclick="handleNoClick()">
+                    ขอคิดดูก่อน 🤔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 💡 ส่วนของ JavaScript ที่ควบคุมการขยาย/หดตัวของปุ่ม -->
+    <script>
+        let yesScale = 1; // ขนาดเริ่มต้นของปุ่ม Yes
+        let noScale = 1;  // ขนาดเริ่มต้นของปุ่ม No
+        let clickCount = 0; // นับจำนวนครั้งที่กดปุ่ม No
+
+        // ข้อความอ้อนๆ ที่จะเปลี่ยนไปเรื่อยๆ เมื่อกดปุ่ม No
+        const noMessages = [
+            "แน่ใจหรอ? 🥺",
+            "คิดดูดีๆ น้าาา 😭",
+            "ปุ่มจะหายแล้วนะ! 🤏",
+            "ใจร้ายยยยย 💔",
+            "กดปุ่มสีชมพูเถอะพลีสสส 🙏"
+        ];
+
+        function handleNoClick() {
+            // 1. ทำให้ปุ่ม Yes ใหญ่ขึ้นทีละ 0.4 เท่า
+            yesScale += 0.4;
+            document.getElementById('btnYes').style.transform = `scale(${yesScale})`;
+
+            // 2. ทำให้ปุ่ม No เล็กลงทีละ 0.15 เท่า
+            noScale -= 0.15;
+            document.getElementById('btnNo').style.transform = `scale(${noScale})`;
+
+            // 3. เปลี่ยนข้อความในปุ่ม No ตามลำดับ
+            if (clickCount < noMessages.length) {
+                document.getElementById('btnNo').innerText = noMessages[clickCount];
+                clickCount++;
+            }
+
+            // 4. ถ้าปุ่ม No เล็กจนมองแทบไม่เห็น (หรือติดลบ) ให้ซ่อนปุ่มไปเลย บังคับให้กด Yes!
+            if (noScale <= 0.2) {
+                document.getElementById('btnNo').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
